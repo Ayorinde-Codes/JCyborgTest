@@ -8,10 +8,10 @@ function Header(props){
     return (
         <div>
 
-
 	<header className="header_area">
 		<div className="main_menu">
-			<nav className="navbar navbar-expand-lg navbar-light">
+			<nav className="navbar navbar-expand-lg navbar-dark">
+			{/* <nav className="navbar navbar-expand-sm bg-dark navbar-dark"> */}
 				<div className="container">
 
 					<Link className="navbar-brand logo_h" to={'/'}> <img style={{height:"100px", width:"150px"  }} src="/assets/images/site_logo1.png" alt="" /> </Link>
@@ -29,12 +29,7 @@ function Header(props){
 								<li className="nav-item"><Link className="nav-link" to={'/provider_registration'}>Provider Registration </Link></li>
 								</ul>
 								</div> 
-								<div className="right-button">
-								<ul>
-								{/* <li className="shop-icon"><a href="#"><i className="ti-shopping-cart-full"></i><span>0</span></a></li> 
-								<li><a className="sign_up" href="">Sign Up</a></li> */}
-							</ul>
-						</div>
+								
 				</div>
 			</nav>
 		</div>
@@ -48,22 +43,3 @@ function Header(props){
 
 export default Header;
 
-{/* <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a className="navbar-brand" href="#">Navbar</a>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-  <div className="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul className="navbar-nav">
-      <li className="nav-item">
-        <a className="nav-link" href="#">Link</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Link</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Link</a>
-      </li>    
-    </ul>
-  </div>  
-</nav>  */}
